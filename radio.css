@@ -89,7 +89,7 @@ input[type="radio"]:checked ~ div.click-paw > svg {
 	height: 50px;
 	/* rotate: 180deg; */
 	pointer-events: none;
-	animation: paw-clap 2s ease;
+	animation: paw-clap 1s ease;
 	
 }
 input[type="radio"]:checked + span[custom-btn]::before {
@@ -121,6 +121,20 @@ input[type="radio"]:checked + span[custom-btn] {
 }
 span[custom-btn]:hover {
 	border-color: #f53c3c;
+}
+.moving-paw::after {
+	content: "";
+	display: block;
+	background-color: rgba(255, 255, 255, 0);
+	background-image: url("./cat-arm.svg");
+	background-size: contain;
+  	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+	width: 40px;
+	height: 50px;
+	translate: (0, 3px);
+	background-color: rgba(255, 255, 255, 0);
 }
 input[type="radio"]:active + span {
 	background-color: rgb(218, 215, 215);
